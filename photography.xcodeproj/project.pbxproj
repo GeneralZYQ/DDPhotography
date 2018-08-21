@@ -62,6 +62,9 @@
 		E36B54F321270F60002DFD07 /* DDCreateOrderItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B54F221270F60002DFD07 /* DDCreateOrderItemView.m */; };
 		E36B54F62129A0F1002DFD07 /* DDDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B54F52129A0F1002DFD07 /* DDDatePicker.m */; };
 		E36B54FC212C04E8002DFD07 /* DDDateOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B54FB212C04E7002DFD07 /* DDDateOrderCell.m */; };
+		E36B5501212C0FD0002DFD07 /* DDCustomersController.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B5500212C0FD0002DFD07 /* DDCustomersController.m */; };
+		E36B5504212C1AD7002DFD07 /* DDCustomerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B5503212C1AD7002DFD07 /* DDCustomerButton.m */; };
+		E36B5508212C1B20002DFD07 /* DDCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B5507212C1B20002DFD07 /* DDCustomer.m */; };
 		E3AB3EAA2123F12E00A59E42 /* DDPersonalInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AB3EA82123F12E00A59E42 /* DDPersonalInfoViewController.m */; };
 		E3AB3EAB2123F12E00A59E42 /* DDPersonalInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3AB3EA92123F12E00A59E42 /* DDPersonalInfoViewController.xib */; };
 		E3AB3EAF2123FF0000A59E42 /* DDForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AB3EAD2123FF0000A59E42 /* DDForgetPasswordViewController.m */; };
@@ -173,6 +176,12 @@
 		E36B54F52129A0F1002DFD07 /* DDDatePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDDatePicker.m; sourceTree = "<group>"; };
 		E36B54FA212C04E7002DFD07 /* DDDateOrderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDDateOrderCell.h; sourceTree = "<group>"; };
 		E36B54FB212C04E7002DFD07 /* DDDateOrderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDDateOrderCell.m; sourceTree = "<group>"; };
+		E36B54FF212C0FD0002DFD07 /* DDCustomersController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCustomersController.h; sourceTree = "<group>"; };
+		E36B5500212C0FD0002DFD07 /* DDCustomersController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCustomersController.m; sourceTree = "<group>"; };
+		E36B5502212C1AD7002DFD07 /* DDCustomerButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCustomerButton.h; sourceTree = "<group>"; };
+		E36B5503212C1AD7002DFD07 /* DDCustomerButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCustomerButton.m; sourceTree = "<group>"; };
+		E36B5506212C1B20002DFD07 /* DDCustomer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCustomer.h; sourceTree = "<group>"; };
+		E36B5507212C1B20002DFD07 /* DDCustomer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCustomer.m; sourceTree = "<group>"; };
 		E3AB3EA72123F12E00A59E42 /* DDPersonalInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDPersonalInfoViewController.h; sourceTree = "<group>"; };
 		E3AB3EA82123F12E00A59E42 /* DDPersonalInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPersonalInfoViewController.m; sourceTree = "<group>"; };
 		E3AB3EA92123F12E00A59E42 /* DDPersonalInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DDPersonalInfoViewController.xib; sourceTree = "<group>"; };
@@ -223,6 +232,7 @@
 		E312EBEB212172D7006962D1 /* photography */ = {
 			isa = PBXGroup;
 			children = (
+				E36B54FD212C0EBD002DFD07 /* Customer */,
 				E36B54F7212BD9C5002DFD07 /* Schedule */,
 				E312EBF2212172D7006962D1 /* SecondViewController.h */,
 				E312EBF3212172D7006962D1 /* SecondViewController.m */,
@@ -470,6 +480,35 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		E36B54FD212C0EBD002DFD07 /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				E36B5505212C1AE6002DFD07 /* Model */,
+				E36B54FE212C0ECF002DFD07 /* View */,
+				E36B54FF212C0FD0002DFD07 /* DDCustomersController.h */,
+				E36B5500212C0FD0002DFD07 /* DDCustomersController.m */,
+			);
+			path = Customer;
+			sourceTree = "<group>";
+		};
+		E36B54FE212C0ECF002DFD07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E36B5502212C1AD7002DFD07 /* DDCustomerButton.h */,
+				E36B5503212C1AD7002DFD07 /* DDCustomerButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E36B5505212C1AE6002DFD07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E36B5506212C1B20002DFD07 /* DDCustomer.h */,
+				E36B5507212C1B20002DFD07 /* DDCustomer.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E41FCF87FD1372FB73CC5504 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -616,9 +655,11 @@
 				E312EC5021218AE3006962D1 /* NSDate+sunny.m in Sources */,
 				E36B54EA2126BC61002DFD07 /* DDMessage.m in Sources */,
 				E312EC212121767D006962D1 /* IDURLRequestModel.m in Sources */,
+				E36B5501212C0FD0002DFD07 /* DDCustomersController.m in Sources */,
 				E3AB3EAF2123FF0000A59E42 /* DDForgetPasswordViewController.m in Sources */,
 				E36B54DC21269BF6002DFD07 /* DDOrderDetailItemCell.m in Sources */,
 				E312EC1D2121767D006962D1 /* IDObject.m in Sources */,
+				E36B5508212C1B20002DFD07 /* DDCustomer.m in Sources */,
 				E36B54ED2126BC78002DFD07 /* DDMessageCell.m in Sources */,
 				E3AB3EAA2123F12E00A59E42 /* DDPersonalInfoViewController.m in Sources */,
 				E312EC2E21218ACD006962D1 /* NullSafe.m in Sources */,
@@ -633,6 +674,7 @@
 				E312EC5521218AE3006962D1 /* Utility.m in Sources */,
 				E36B54F321270F60002DFD07 /* DDCreateOrderItemView.m in Sources */,
 				E312EC4A21218AE3006962D1 /* SNTimerHolder.m in Sources */,
+				E36B5504212C1AD7002DFD07 /* DDCustomerButton.m in Sources */,
 				E312EC4F21218AE3006962D1 /* UIImage+Tint.m in Sources */,
 				E312EC5421218AE3006962D1 /* UIImage+Orientation.m in Sources */,
 				E312EC1E2121767D006962D1 /* NSArray+Additions.m in Sources */,

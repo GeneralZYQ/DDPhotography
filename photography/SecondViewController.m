@@ -9,6 +9,9 @@
 #import "SecondViewController.h"
 #import "IDInlines.h"
 #import "DDDateOrderCell.h"
+#import "DDOrder.h"
+#import "DDOrderDetailViewController.h"
+#import "DDCreateOrderViewController.h"
 
 @interface SecondViewController ()<JTCalendarDelegate, UITableViewDelegate, UITableViewDataSource>
 
@@ -56,6 +59,15 @@
     _tableView.dataSource = self;
     _tableView.rowHeight = 44;
     [self.view addSubview:_tableView];
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"+" style:UIBarButtonItemStylePlain target:self action:@selector(addItemPressed)];
+    self.navigationItem.rightBarButtonItem = item;
+}
+
+- (void)addItemPressed {
+    DDCreateOrderViewController *createVC = [[DDCreateOrderViewController alloc] init];
+    createVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:createVC animated:YES];
 }
 
 
@@ -175,6 +187,14 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _orders.count;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    DDOrder *oerder = _orders[indexPath.row];
+    DDOrderDetailViewController *detailVC = [[DDOrderDetailViewController alloc] initWithOrder:oerder];
+    detailVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 

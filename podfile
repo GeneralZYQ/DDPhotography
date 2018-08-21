@@ -1,0 +1,8 @@
+platform:ios,'8.0'
+target 'photography' do
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'MJRefresh'
+pod 'JTCalendar'
+end
+

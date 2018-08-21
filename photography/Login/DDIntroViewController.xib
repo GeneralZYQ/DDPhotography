@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DDIntroViewController">
+            <connections>
+                <outlet property="loginButton" destination="bkQ-4k-nHr" id="vUd-CP-qdK"/>
+                <outlet property="signButton" destination="V8i-w4-76B" id="IcW-0B-3mW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkQ-4k-nHr">
+                    <rect key="frame" x="43" y="577" width="120" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="EE8-dy-nHG"/>
+                        <constraint firstAttribute="height" constant="50" id="Onb-Ck-iav"/>
+                    </constraints>
+                    <state key="normal" title="登录"/>
+                    <connections>
+                        <action selector="loginbuttonpressed:" destination="-1" eventType="touchUpInside" id="imB-Au-m4M"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8i-w4-76B">
+                    <rect key="frame" x="212" y="577" width="120" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="LzL-wR-Tvc"/>
+                        <constraint firstAttribute="width" constant="120" id="SC4-Z6-5nJ"/>
+                    </constraints>
+                    <state key="normal" title="注册"/>
+                    <connections>
+                        <action selector="signbuttonpressed:" destination="-1" eventType="touchDown" id="POZ-xi-8gZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="V8i-w4-76B" firstAttribute="leading" secondItem="bkQ-4k-nHr" secondAttribute="trailing" constant="49" id="4Yg-MC-54e"/>
+                <constraint firstItem="V8i-w4-76B" firstAttribute="leading" secondItem="bkQ-4k-nHr" secondAttribute="trailing" constant="49" id="5y9-uE-5eP"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="V8i-w4-76B" secondAttribute="bottom" constant="40" id="Fa9-S7-QTe"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="bkQ-4k-nHr" secondAttribute="bottom" constant="40" id="QmY-9F-p32"/>
+                <constraint firstItem="bkQ-4k-nHr" firstAttribute="width" secondItem="V8i-w4-76B" secondAttribute="width" id="ejb-aN-Vm8"/>
+                <constraint firstItem="bkQ-4k-nHr" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="43" id="qlO-d7-Eao"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

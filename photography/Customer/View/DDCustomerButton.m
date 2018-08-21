@@ -38,7 +38,7 @@
     return self;
 }
 
-- (void)setCustomer:(DDCustomer *)customer {
+- (void)setCustomer:(Customer *)customer {
     _customer = customer;
     _typeLabel.text = customer.customerType;
     _nameLabel.text = customer.name;

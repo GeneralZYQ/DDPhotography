@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DDCustomer : NSObject
+@interface Customer : NSObject
 
 @property (nonatomic, strong) NSString *customerType; //婚礼，宣传，活动
 @property (nonatomic, strong) NSString *name;

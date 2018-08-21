@@ -64,7 +64,9 @@
 		E36B54FC212C04E8002DFD07 /* DDDateOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B54FB212C04E7002DFD07 /* DDDateOrderCell.m */; };
 		E36B5501212C0FD0002DFD07 /* DDCustomersController.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B5500212C0FD0002DFD07 /* DDCustomersController.m */; };
 		E36B5504212C1AD7002DFD07 /* DDCustomerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B5503212C1AD7002DFD07 /* DDCustomerButton.m */; };
-		E36B5508212C1B20002DFD07 /* DDCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B5507212C1B20002DFD07 /* DDCustomer.m */; };
+		E36B5508212C1B20002DFD07 /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B5507212C1B20002DFD07 /* Customer.m */; };
+		E36B550B212C2B88002DFD07 /* DDCustomerFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B550A212C2B88002DFD07 /* DDCustomerFilterView.m */; };
+		E36B550E212C2E55002DFD07 /* DDCustomerFilterConditonView.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B550D212C2E55002DFD07 /* DDCustomerFilterConditonView.m */; };
 		E3AB3EAA2123F12E00A59E42 /* DDPersonalInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AB3EA82123F12E00A59E42 /* DDPersonalInfoViewController.m */; };
 		E3AB3EAB2123F12E00A59E42 /* DDPersonalInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3AB3EA92123F12E00A59E42 /* DDPersonalInfoViewController.xib */; };
 		E3AB3EAF2123FF0000A59E42 /* DDForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AB3EAD2123FF0000A59E42 /* DDForgetPasswordViewController.m */; };
@@ -180,8 +182,12 @@
 		E36B5500212C0FD0002DFD07 /* DDCustomersController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCustomersController.m; sourceTree = "<group>"; };
 		E36B5502212C1AD7002DFD07 /* DDCustomerButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCustomerButton.h; sourceTree = "<group>"; };
 		E36B5503212C1AD7002DFD07 /* DDCustomerButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCustomerButton.m; sourceTree = "<group>"; };
-		E36B5506212C1B20002DFD07 /* DDCustomer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCustomer.h; sourceTree = "<group>"; };
-		E36B5507212C1B20002DFD07 /* DDCustomer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCustomer.m; sourceTree = "<group>"; };
+		E36B5506212C1B20002DFD07 /* Customer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
+		E36B5507212C1B20002DFD07 /* Customer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Customer.m; sourceTree = "<group>"; };
+		E36B5509212C2B88002DFD07 /* DDCustomerFilterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCustomerFilterView.h; sourceTree = "<group>"; };
+		E36B550A212C2B88002DFD07 /* DDCustomerFilterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCustomerFilterView.m; sourceTree = "<group>"; };
+		E36B550C212C2E55002DFD07 /* DDCustomerFilterConditonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCustomerFilterConditonView.h; sourceTree = "<group>"; };
+		E36B550D212C2E55002DFD07 /* DDCustomerFilterConditonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCustomerFilterConditonView.m; sourceTree = "<group>"; };
 		E3AB3EA72123F12E00A59E42 /* DDPersonalInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDPersonalInfoViewController.h; sourceTree = "<group>"; };
 		E3AB3EA82123F12E00A59E42 /* DDPersonalInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPersonalInfoViewController.m; sourceTree = "<group>"; };
 		E3AB3EA92123F12E00A59E42 /* DDPersonalInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DDPersonalInfoViewController.xib; sourceTree = "<group>"; };
@@ -496,6 +502,10 @@
 			children = (
 				E36B5502212C1AD7002DFD07 /* DDCustomerButton.h */,
 				E36B5503212C1AD7002DFD07 /* DDCustomerButton.m */,
+				E36B5509212C2B88002DFD07 /* DDCustomerFilterView.h */,
+				E36B550A212C2B88002DFD07 /* DDCustomerFilterView.m */,
+				E36B550C212C2E55002DFD07 /* DDCustomerFilterConditonView.h */,
+				E36B550D212C2E55002DFD07 /* DDCustomerFilterConditonView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -503,8 +513,8 @@
 		E36B5505212C1AE6002DFD07 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E36B5506212C1B20002DFD07 /* DDCustomer.h */,
-				E36B5507212C1B20002DFD07 /* DDCustomer.m */,
+				E36B5506212C1B20002DFD07 /* Customer.h */,
+				E36B5507212C1B20002DFD07 /* Customer.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -652,6 +662,7 @@
 				E312EC5121218AE3006962D1 /* NSString+URLEncoding.m in Sources */,
 				E312EC6021218B06006962D1 /* IDViewController.m in Sources */,
 				E312EC5F21218B06006962D1 /* IDNetworkViewController.m in Sources */,
+				E36B550B212C2B88002DFD07 /* DDCustomerFilterView.m in Sources */,
 				E312EC5021218AE3006962D1 /* NSDate+sunny.m in Sources */,
 				E36B54EA2126BC61002DFD07 /* DDMessage.m in Sources */,
 				E312EC212121767D006962D1 /* IDURLRequestModel.m in Sources */,
@@ -659,7 +670,7 @@
 				E3AB3EAF2123FF0000A59E42 /* DDForgetPasswordViewController.m in Sources */,
 				E36B54DC21269BF6002DFD07 /* DDOrderDetailItemCell.m in Sources */,
 				E312EC1D2121767D006962D1 /* IDObject.m in Sources */,
-				E36B5508212C1B20002DFD07 /* DDCustomer.m in Sources */,
+				E36B5508212C1B20002DFD07 /* Customer.m in Sources */,
 				E36B54ED2126BC78002DFD07 /* DDMessageCell.m in Sources */,
 				E3AB3EAA2123F12E00A59E42 /* DDPersonalInfoViewController.m in Sources */,
 				E312EC2E21218ACD006962D1 /* NullSafe.m in Sources */,
@@ -673,6 +684,7 @@
 				E312EC702121A613006962D1 /* DDLoginViewController.m in Sources */,
 				E312EC5521218AE3006962D1 /* Utility.m in Sources */,
 				E36B54F321270F60002DFD07 /* DDCreateOrderItemView.m in Sources */,
+				E36B550E212C2E55002DFD07 /* DDCustomerFilterConditonView.m in Sources */,
 				E312EC4A21218AE3006962D1 /* SNTimerHolder.m in Sources */,
 				E36B5504212C1AD7002DFD07 /* DDCustomerButton.m in Sources */,
 				E312EC4F21218AE3006962D1 /* UIImage+Tint.m in Sources */,

@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DDCustomer.h"
+#import "Customer.h"
 #import "UIView+sunny.h"
 
 @interface DDCustomerButton : UIView
 
-@property (nonatomic, strong) DDCustomer *customer;
+@property (nonatomic, strong) Customer *customer;
 
 @end

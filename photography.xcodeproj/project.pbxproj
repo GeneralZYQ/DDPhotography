@@ -75,6 +75,9 @@
 		E36B551F212D3013002DFD07 /* CustomerEditItemObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B551E212D3013002DFD07 /* CustomerEditItemObject.m */; };
 		E36B5523212D30DD002DFD07 /* CustomerEditItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B5521212D30DD002DFD07 /* CustomerEditItemCell.m */; };
 		E36B5524212D30DD002DFD07 /* CustomerEditItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36B5522212D30DD002DFD07 /* CustomerEditItemCell.xib */; };
+		E36B5527212D4238002DFD07 /* FilterCustomersConditionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B5526212D4238002DFD07 /* FilterCustomersConditionsView.m */; };
+		E36B5529212D426F002DFD07 /* FilterCustomersConditionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36B5528212D426F002DFD07 /* FilterCustomersConditionsView.xib */; };
+		E36B552D212DAE70002DFD07 /* DDMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B552C212DAE70002DFD07 /* DDMineViewController.m */; };
 		E3AB3EAA2123F12E00A59E42 /* DDPersonalInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AB3EA82123F12E00A59E42 /* DDPersonalInfoViewController.m */; };
 		E3AB3EAB2123F12E00A59E42 /* DDPersonalInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3AB3EA92123F12E00A59E42 /* DDPersonalInfoViewController.xib */; };
 		E3AB3EAF2123FF0000A59E42 /* DDForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AB3EAD2123FF0000A59E42 /* DDForgetPasswordViewController.m */; };
@@ -210,6 +213,11 @@
 		E36B5520212D30DD002DFD07 /* CustomerEditItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomerEditItemCell.h; sourceTree = "<group>"; };
 		E36B5521212D30DD002DFD07 /* CustomerEditItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomerEditItemCell.m; sourceTree = "<group>"; };
 		E36B5522212D30DD002DFD07 /* CustomerEditItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerEditItemCell.xib; sourceTree = "<group>"; };
+		E36B5525212D4238002DFD07 /* FilterCustomersConditionsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterCustomersConditionsView.h; sourceTree = "<group>"; };
+		E36B5526212D4238002DFD07 /* FilterCustomersConditionsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterCustomersConditionsView.m; sourceTree = "<group>"; };
+		E36B5528212D426F002DFD07 /* FilterCustomersConditionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterCustomersConditionsView.xib; sourceTree = "<group>"; };
+		E36B552B212DAE70002DFD07 /* DDMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDMineViewController.h; sourceTree = "<group>"; };
+		E36B552C212DAE70002DFD07 /* DDMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDMineViewController.m; sourceTree = "<group>"; };
 		E3AB3EA72123F12E00A59E42 /* DDPersonalInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDPersonalInfoViewController.h; sourceTree = "<group>"; };
 		E3AB3EA82123F12E00A59E42 /* DDPersonalInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPersonalInfoViewController.m; sourceTree = "<group>"; };
 		E3AB3EA92123F12E00A59E42 /* DDPersonalInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DDPersonalInfoViewController.xib; sourceTree = "<group>"; };
@@ -260,6 +268,7 @@
 		E312EBEB212172D7006962D1 /* photography */ = {
 			isa = PBXGroup;
 			children = (
+				E36B552A212DAE42002DFD07 /* Mine */,
 				E36B54FD212C0EBD002DFD07 /* Customer */,
 				E36B54F7212BD9C5002DFD07 /* Schedule */,
 				E312EBF2212172D7006962D1 /* SecondViewController.h */,
@@ -538,6 +547,9 @@
 				E36B5520212D30DD002DFD07 /* CustomerEditItemCell.h */,
 				E36B5521212D30DD002DFD07 /* CustomerEditItemCell.m */,
 				E36B5522212D30DD002DFD07 /* CustomerEditItemCell.xib */,
+				E36B5525212D4238002DFD07 /* FilterCustomersConditionsView.h */,
+				E36B5526212D4238002DFD07 /* FilterCustomersConditionsView.m */,
+				E36B5528212D426F002DFD07 /* FilterCustomersConditionsView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -553,6 +565,15 @@
 				E36B551E212D3013002DFD07 /* CustomerEditItemObject.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E36B552A212DAE42002DFD07 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				E36B552B212DAE70002DFD07 /* DDMineViewController.h */,
+				E36B552C212DAE70002DFD07 /* DDMineViewController.m */,
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 		E41FCF87FD1372FB73CC5504 /* Frameworks */ = {
@@ -634,6 +655,7 @@
 				E312EBF7212172D7006962D1 /* Main.storyboard in Resources */,
 				E3AB3EAB2123F12E00A59E42 /* DDPersonalInfoViewController.xib in Resources */,
 				E36B5516212D1C2B002DFD07 /* CustomerItemCell.xib in Resources */,
+				E36B5529212D426F002DFD07 /* FilterCustomersConditionsView.xib in Resources */,
 				E312EC6C2121924D006962D1 /* DDIntroViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -701,6 +723,7 @@
 				E312EBEE212172D7006962D1 /* AppDelegate.m in Sources */,
 				E312EC5121218AE3006962D1 /* NSString+URLEncoding.m in Sources */,
 				E36B5515212D1C2B002DFD07 /* CustomerItemCell.m in Sources */,
+				E36B552D212DAE70002DFD07 /* DDMineViewController.m in Sources */,
 				E312EC6021218B06006962D1 /* IDViewController.m in Sources */,
 				E312EC5F21218B06006962D1 /* IDNetworkViewController.m in Sources */,
 				E36B550B212C2B88002DFD07 /* DDCustomerFilterView.m in Sources */,
@@ -714,6 +737,7 @@
 				E36B5508212C1B20002DFD07 /* Customer.m in Sources */,
 				E36B54ED2126BC78002DFD07 /* DDMessageCell.m in Sources */,
 				E3AB3EAA2123F12E00A59E42 /* DDPersonalInfoViewController.m in Sources */,
+				E36B5527212D4238002DFD07 /* FilterCustomersConditionsView.m in Sources */,
 				E312EC2E21218ACD006962D1 /* NullSafe.m in Sources */,
 				E312EC5621218AE3006962D1 /* NSString+SO.m in Sources */,
 				E312EC6621218E59006962D1 /* IDTableViewCell.m in Sources */,

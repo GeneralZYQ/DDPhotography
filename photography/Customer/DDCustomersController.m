@@ -27,7 +27,7 @@
     // 需要获取customer的数量
     self.customers = [NSMutableArray arrayWithCapacity:0];
     
-    self.filterView = [[DDCustomerFilterView alloc] initWithFrame:CGRectMake(0, 0, viewWidth(), 40)];
+    self.filterView = [[DDCustomerFilterView alloc] initWithFrame:CGRectMake(0, 64, viewWidth(), 40)];
     [self.view addSubview:self.filterView];
     self.filterView.delegate = self;
     
@@ -63,7 +63,7 @@
 #pragma mark - DDCustomerFilterViewDelegate
 
 - (void)customerDidSearchName:(NSString *)name {
-    
+    // 重新筛选用户
 }
 - (void)customerDidPressFilterButton {
     

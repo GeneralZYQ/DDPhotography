@@ -18,5 +18,6 @@
 @property (nonatomic, assign) NSInteger debit; // 这个客户欠我多少钱
 @property (nonatomic, copy) NSString *contactName; //联系人的名字
 @property (nonatomic, copy) NSString *phone;
+@property (nonatomic, assign) BOOL isLeft; // 详情显示是否靠左
 
 @end

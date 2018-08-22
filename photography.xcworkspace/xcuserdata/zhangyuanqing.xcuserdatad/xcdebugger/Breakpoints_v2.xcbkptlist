@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "photography/SecondViewController.m"
-            timestampString = "556534458.834702"
+            timestampString = "556557353.1725971"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "-calendar:didTouchDayView:"
             landmarkType = "7">
          </BreakpointContent>

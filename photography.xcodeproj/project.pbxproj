@@ -67,6 +67,10 @@
 		E36B5508212C1B20002DFD07 /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B5507212C1B20002DFD07 /* Customer.m */; };
 		E36B550B212C2B88002DFD07 /* DDCustomerFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B550A212C2B88002DFD07 /* DDCustomerFilterView.m */; };
 		E36B550E212C2E55002DFD07 /* DDCustomerFilterConditonView.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B550D212C2E55002DFD07 /* DDCustomerFilterConditonView.m */; };
+		E36B5511212C7190002DFD07 /* DDCustomerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B5510212C7190002DFD07 /* DDCustomerDetailViewController.m */; };
+		E36B5515212D1C2B002DFD07 /* CustomerItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B5513212D1C2B002DFD07 /* CustomerItemCell.m */; };
+		E36B5516212D1C2B002DFD07 /* CustomerItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36B5514212D1C2B002DFD07 /* CustomerItemCell.xib */; };
+		E36B5519212D1F8F002DFD07 /* CustomerItemObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B5518212D1F8F002DFD07 /* CustomerItemObject.m */; };
 		E3AB3EAA2123F12E00A59E42 /* DDPersonalInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AB3EA82123F12E00A59E42 /* DDPersonalInfoViewController.m */; };
 		E3AB3EAB2123F12E00A59E42 /* DDPersonalInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3AB3EA92123F12E00A59E42 /* DDPersonalInfoViewController.xib */; };
 		E3AB3EAF2123FF0000A59E42 /* DDForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AB3EAD2123FF0000A59E42 /* DDForgetPasswordViewController.m */; };
@@ -188,6 +192,13 @@
 		E36B550A212C2B88002DFD07 /* DDCustomerFilterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCustomerFilterView.m; sourceTree = "<group>"; };
 		E36B550C212C2E55002DFD07 /* DDCustomerFilterConditonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCustomerFilterConditonView.h; sourceTree = "<group>"; };
 		E36B550D212C2E55002DFD07 /* DDCustomerFilterConditonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCustomerFilterConditonView.m; sourceTree = "<group>"; };
+		E36B550F212C718F002DFD07 /* DDCustomerDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCustomerDetailViewController.h; sourceTree = "<group>"; };
+		E36B5510212C7190002DFD07 /* DDCustomerDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCustomerDetailViewController.m; sourceTree = "<group>"; };
+		E36B5512212D1C2B002DFD07 /* CustomerItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomerItemCell.h; sourceTree = "<group>"; };
+		E36B5513212D1C2B002DFD07 /* CustomerItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomerItemCell.m; sourceTree = "<group>"; };
+		E36B5514212D1C2B002DFD07 /* CustomerItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerItemCell.xib; sourceTree = "<group>"; };
+		E36B5517212D1F8F002DFD07 /* CustomerItemObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomerItemObject.h; sourceTree = "<group>"; };
+		E36B5518212D1F8F002DFD07 /* CustomerItemObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomerItemObject.m; sourceTree = "<group>"; };
 		E3AB3EA72123F12E00A59E42 /* DDPersonalInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDPersonalInfoViewController.h; sourceTree = "<group>"; };
 		E3AB3EA82123F12E00A59E42 /* DDPersonalInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPersonalInfoViewController.m; sourceTree = "<group>"; };
 		E3AB3EA92123F12E00A59E42 /* DDPersonalInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DDPersonalInfoViewController.xib; sourceTree = "<group>"; };
@@ -493,6 +504,8 @@
 				E36B54FE212C0ECF002DFD07 /* View */,
 				E36B54FF212C0FD0002DFD07 /* DDCustomersController.h */,
 				E36B5500212C0FD0002DFD07 /* DDCustomersController.m */,
+				E36B550F212C718F002DFD07 /* DDCustomerDetailViewController.h */,
+				E36B5510212C7190002DFD07 /* DDCustomerDetailViewController.m */,
 			);
 			path = Customer;
 			sourceTree = "<group>";
@@ -506,6 +519,9 @@
 				E36B550A212C2B88002DFD07 /* DDCustomerFilterView.m */,
 				E36B550C212C2E55002DFD07 /* DDCustomerFilterConditonView.h */,
 				E36B550D212C2E55002DFD07 /* DDCustomerFilterConditonView.m */,
+				E36B5512212D1C2B002DFD07 /* CustomerItemCell.h */,
+				E36B5513212D1C2B002DFD07 /* CustomerItemCell.m */,
+				E36B5514212D1C2B002DFD07 /* CustomerItemCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -515,6 +531,8 @@
 			children = (
 				E36B5506212C1B20002DFD07 /* Customer.h */,
 				E36B5507212C1B20002DFD07 /* Customer.m */,
+				E36B5517212D1F8F002DFD07 /* CustomerItemObject.h */,
+				E36B5518212D1F8F002DFD07 /* CustomerItemObject.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -596,6 +614,7 @@
 				E312EC4D21218AE3006962D1 /* OpenShare in Resources */,
 				E312EBF7212172D7006962D1 /* Main.storyboard in Resources */,
 				E3AB3EAB2123F12E00A59E42 /* DDPersonalInfoViewController.xib in Resources */,
+				E36B5516212D1C2B002DFD07 /* CustomerItemCell.xib in Resources */,
 				E312EC6C2121924D006962D1 /* DDIntroViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -660,6 +679,7 @@
 				E312EC6B2121924D006962D1 /* DDIntroViewController.m in Sources */,
 				E312EBEE212172D7006962D1 /* AppDelegate.m in Sources */,
 				E312EC5121218AE3006962D1 /* NSString+URLEncoding.m in Sources */,
+				E36B5515212D1C2B002DFD07 /* CustomerItemCell.m in Sources */,
 				E312EC6021218B06006962D1 /* IDViewController.m in Sources */,
 				E312EC5F21218B06006962D1 /* IDNetworkViewController.m in Sources */,
 				E36B550B212C2B88002DFD07 /* DDCustomerFilterView.m in Sources */,
@@ -677,6 +697,7 @@
 				E312EC5621218AE3006962D1 /* NSString+SO.m in Sources */,
 				E312EC6621218E59006962D1 /* IDTableViewCell.m in Sources */,
 				E36B54F021270EBC002DFD07 /* DDCreateOrderViewController.m in Sources */,
+				E36B5519212D1F8F002DFD07 /* CustomerItemObject.m in Sources */,
 				E36B54CF21259BB6002DFD07 /* DDOrderDateView.m in Sources */,
 				E36B54E02126B138002DFD07 /* DDOrderSearchViewController.m in Sources */,
 				E312EBFF212172D9006962D1 /* main.m in Sources */,
@@ -686,6 +707,7 @@
 				E36B54F321270F60002DFD07 /* DDCreateOrderItemView.m in Sources */,
 				E36B550E212C2E55002DFD07 /* DDCustomerFilterConditonView.m in Sources */,
 				E312EC4A21218AE3006962D1 /* SNTimerHolder.m in Sources */,
+				E36B5511212C7190002DFD07 /* DDCustomerDetailViewController.m in Sources */,
 				E36B5504212C1AD7002DFD07 /* DDCustomerButton.m in Sources */,
 				E312EC4F21218AE3006962D1 /* UIImage+Tint.m in Sources */,
 				E312EC5421218AE3006962D1 /* UIImage+Orientation.m in Sources */,

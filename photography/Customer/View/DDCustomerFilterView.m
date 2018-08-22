@@ -19,6 +19,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         
+        self.backgroundColor = [UIColor whiteColor];
+        
         _textFiled = [[UITextField alloc] initWithFrame:CGRectMake(30, 5, self.width - 120, 30)];
         _textFiled.layer.cornerRadius = 15;
         _textFiled.layer.borderColor = [UIColor blueColor].CGColor;
@@ -28,12 +30,14 @@
         
         _filterButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _filterButton.frame = CGRectMake(_textFiled.right + 10, 5, 30, 30);
+        [_filterButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         [self addSubview:_filterButton];
         [_filterButton setTitle:@"F" forState:UIControlStateNormal];
         
         _addButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _addButton.frame = CGRectMake(_filterButton.right + 10, 5, 30, 30);
         [self addSubview:_addButton];
+        [_addButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         [_addButton setTitle:@"+" forState:UIControlStateNormal];
     }
     return self;

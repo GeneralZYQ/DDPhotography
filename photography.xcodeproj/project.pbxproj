@@ -71,6 +71,10 @@
 		E36B5515212D1C2B002DFD07 /* CustomerItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B5513212D1C2B002DFD07 /* CustomerItemCell.m */; };
 		E36B5516212D1C2B002DFD07 /* CustomerItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36B5514212D1C2B002DFD07 /* CustomerItemCell.xib */; };
 		E36B5519212D1F8F002DFD07 /* CustomerItemObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B5518212D1F8F002DFD07 /* CustomerItemObject.m */; };
+		E36B551C212D2DF8002DFD07 /* DDEditCustomerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B551B212D2DF8002DFD07 /* DDEditCustomerController.m */; };
+		E36B551F212D3013002DFD07 /* CustomerEditItemObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B551E212D3013002DFD07 /* CustomerEditItemObject.m */; };
+		E36B5523212D30DD002DFD07 /* CustomerEditItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E36B5521212D30DD002DFD07 /* CustomerEditItemCell.m */; };
+		E36B5524212D30DD002DFD07 /* CustomerEditItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36B5522212D30DD002DFD07 /* CustomerEditItemCell.xib */; };
 		E3AB3EAA2123F12E00A59E42 /* DDPersonalInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AB3EA82123F12E00A59E42 /* DDPersonalInfoViewController.m */; };
 		E3AB3EAB2123F12E00A59E42 /* DDPersonalInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3AB3EA92123F12E00A59E42 /* DDPersonalInfoViewController.xib */; };
 		E3AB3EAF2123FF0000A59E42 /* DDForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AB3EAD2123FF0000A59E42 /* DDForgetPasswordViewController.m */; };
@@ -199,6 +203,13 @@
 		E36B5514212D1C2B002DFD07 /* CustomerItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerItemCell.xib; sourceTree = "<group>"; };
 		E36B5517212D1F8F002DFD07 /* CustomerItemObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomerItemObject.h; sourceTree = "<group>"; };
 		E36B5518212D1F8F002DFD07 /* CustomerItemObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomerItemObject.m; sourceTree = "<group>"; };
+		E36B551A212D2DF8002DFD07 /* DDEditCustomerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDEditCustomerController.h; sourceTree = "<group>"; };
+		E36B551B212D2DF8002DFD07 /* DDEditCustomerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDEditCustomerController.m; sourceTree = "<group>"; };
+		E36B551D212D3013002DFD07 /* CustomerEditItemObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomerEditItemObject.h; sourceTree = "<group>"; };
+		E36B551E212D3013002DFD07 /* CustomerEditItemObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomerEditItemObject.m; sourceTree = "<group>"; };
+		E36B5520212D30DD002DFD07 /* CustomerEditItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomerEditItemCell.h; sourceTree = "<group>"; };
+		E36B5521212D30DD002DFD07 /* CustomerEditItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomerEditItemCell.m; sourceTree = "<group>"; };
+		E36B5522212D30DD002DFD07 /* CustomerEditItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerEditItemCell.xib; sourceTree = "<group>"; };
 		E3AB3EA72123F12E00A59E42 /* DDPersonalInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDPersonalInfoViewController.h; sourceTree = "<group>"; };
 		E3AB3EA82123F12E00A59E42 /* DDPersonalInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPersonalInfoViewController.m; sourceTree = "<group>"; };
 		E3AB3EA92123F12E00A59E42 /* DDPersonalInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DDPersonalInfoViewController.xib; sourceTree = "<group>"; };
@@ -506,6 +517,8 @@
 				E36B5500212C0FD0002DFD07 /* DDCustomersController.m */,
 				E36B550F212C718F002DFD07 /* DDCustomerDetailViewController.h */,
 				E36B5510212C7190002DFD07 /* DDCustomerDetailViewController.m */,
+				E36B551A212D2DF8002DFD07 /* DDEditCustomerController.h */,
+				E36B551B212D2DF8002DFD07 /* DDEditCustomerController.m */,
 			);
 			path = Customer;
 			sourceTree = "<group>";
@@ -522,6 +535,9 @@
 				E36B5512212D1C2B002DFD07 /* CustomerItemCell.h */,
 				E36B5513212D1C2B002DFD07 /* CustomerItemCell.m */,
 				E36B5514212D1C2B002DFD07 /* CustomerItemCell.xib */,
+				E36B5520212D30DD002DFD07 /* CustomerEditItemCell.h */,
+				E36B5521212D30DD002DFD07 /* CustomerEditItemCell.m */,
+				E36B5522212D30DD002DFD07 /* CustomerEditItemCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -533,6 +549,8 @@
 				E36B5507212C1B20002DFD07 /* Customer.m */,
 				E36B5517212D1F8F002DFD07 /* CustomerItemObject.h */,
 				E36B5518212D1F8F002DFD07 /* CustomerItemObject.m */,
+				E36B551D212D3013002DFD07 /* CustomerEditItemObject.h */,
+				E36B551E212D3013002DFD07 /* CustomerEditItemObject.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -604,6 +622,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E36B5524212D30DD002DFD07 /* CustomerEditItemCell.xib in Resources */,
 				E312EC4B21218AE3006962D1 /* TZImagePicker in Resources */,
 				E312EC762121A665006962D1 /* DDSignViewController.xib in Resources */,
 				E36B54E12126B138002DFD07 /* DDOrderSearchViewController.xib in Resources */,
@@ -667,7 +686,9 @@
 			files = (
 				E36B54D22125AD43002DFD07 /* DDOrderCell.m in Sources */,
 				E312EC202121767D006962D1 /* NINonRetainingCollections.m in Sources */,
+				E36B5523212D30DD002DFD07 /* CustomerEditItemCell.m in Sources */,
 				E312EBF4212172D7006962D1 /* SecondViewController.m in Sources */,
+				E36B551F212D3013002DFD07 /* CustomerEditItemObject.m in Sources */,
 				E312EC2B2121769D006962D1 /* IDAPIClient.m in Sources */,
 				E36B54D62125B939002DFD07 /* DDOrder.m in Sources */,
 				E36B54E52126BC34002DFD07 /* DDMessagesViewController.m in Sources */,
@@ -706,6 +727,7 @@
 				E312EC5521218AE3006962D1 /* Utility.m in Sources */,
 				E36B54F321270F60002DFD07 /* DDCreateOrderItemView.m in Sources */,
 				E36B550E212C2E55002DFD07 /* DDCustomerFilterConditonView.m in Sources */,
+				E36B551C212D2DF8002DFD07 /* DDEditCustomerController.m in Sources */,
 				E312EC4A21218AE3006962D1 /* SNTimerHolder.m in Sources */,
 				E36B5511212C7190002DFD07 /* DDCustomerDetailViewController.m in Sources */,
 				E36B5504212C1AD7002DFD07 /* DDCustomerButton.m in Sources */,

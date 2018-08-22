@@ -9,6 +9,7 @@
 #import "DDCustomerDetailViewController.h"
 #import "CustomerItemObject.h"
 #import "CustomerItemCell.h"
+#import "DDEditCustomerController.h"
 
 @interface DDCustomerDetailViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -85,7 +86,15 @@
     
     [self.tableView reloadData];
     
+    UIBarButtonItem *editItem = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(editCustomerItem)];
+    self.navigationItem.rightBarButtonItem = editItem;
+    
     // Do any additional setup after loading the view.
+}
+
+- (void)editCustomerItem {
+    DDEditCustomerController *editVC = [[DDEditCustomerController alloc] initWithCustomer:self.customer];
+    [self.navigationController pushViewController:editVC animated:YES];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

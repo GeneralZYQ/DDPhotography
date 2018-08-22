@@ -86,6 +86,10 @@
     
     CustomerEditItemObject *phoneItem = self.items[3];
     self.customer.phone = phoneItem.currentValue;
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+       //notification
+    }];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

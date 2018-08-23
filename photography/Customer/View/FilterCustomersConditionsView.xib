@@ -12,10 +12,17 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FilterCustomersConditionsView">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCQ-n6-RdK">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="dismissButtonPressed:" destination="-2" eventType="touchUpInside" id="Ho3-On-9eH"/>
+                    </connections>
+                </button>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y0e-kj-xBB">
                     <rect key="frame" x="48" y="68" width="311" height="186"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -68,11 +75,17 @@
                             <rect key="frame" x="0.0" y="156" width="155" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="重置"/>
+                            <connections>
+                                <action selector="cancelButtonPresed:" destination="iN0-l3-epB" eventType="touchUpInside" id="inF-E2-wny"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Im7-yk-5f1">
                             <rect key="frame" x="156" y="156" width="155" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="确定"/>
+                            <connections>
+                                <action selector="confirmButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="X5B-fv-Via"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -81,6 +94,14 @@
             <color key="backgroundColor" red="0.00063451776649747771" green="0.00063451776649747771" blue="0.00063451776649747771" alpha="0.1835134845890411" colorSpace="custom" customColorSpace="sRGB"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="activityButton" destination="hUa-VK-cAM" id="ovv-B0-WhW"/>
+                <outlet property="badButton" destination="ca8-AB-qNh" id="fu2-FZ-7Le"/>
+                <outlet property="bestButton" destination="KS1-gW-9j9" id="VjI-W2-zFh"/>
+                <outlet property="goodButton" destination="Uqw-TQ-qOL" id="eSH-Pr-O6T"/>
+                <outlet property="publicButton" destination="LLh-Fk-LBr" id="NJ2-aE-mgq"/>
+                <outlet property="weddingButton" destination="QH7-Qm-sVV" id="ub4-gW-7Rh"/>
+            </connections>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>

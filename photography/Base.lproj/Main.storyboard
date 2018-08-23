@@ -91,7 +91,7 @@
         <!--我的-->
         <scene sceneID="2LW-Is-T88">
             <objects>
-                <viewController id="T4b-ja-ipy" sceneMemberID="viewController">
+                <viewController id="T4b-ja-ipy" customClass="DDMineViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gPy-oO-Fqe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

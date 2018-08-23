@@ -11,12 +11,14 @@
 #import "DDCustomerFilterView.h"
 #import "DDCustomerFilterConditonView.h"
 #import "DDEditCustomerController.h"
+#import "FilterCustomersConditionsView.h"
 
-@interface DDCustomersController ()<UIScrollViewDelegate, DDCustomerFilterViewDelegate>
+@interface DDCustomersController ()<UIScrollViewDelegate, DDCustomerFilterViewDelegate, FilterCustomersConditionsViewDelegate>
 
 @property (nonatomic, strong) UIScrollView *backScroll;
 @property (nonatomic, strong) DDCustomerFilterView *filterView;
 @property (nonatomic, strong) NSMutableArray *customers;
+@property (nonatomic, strong) FilterCustomersConditionsView *conditionsView;
 
 @end
 
@@ -33,6 +35,9 @@
     self.filterView.delegate = self;
     
     self.backScroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 40, viewWidth(), SNScreenBounds().size.height - 64 -55 -40)];
+    
+    self.conditionsView = [[[NSBundle mainBundle] loadNibNamed:@"FilterCustomersConditionsView" owner:self options:nil] lastObject];
+    self.conditionsView.delegate = self;
     
     
     NSInteger allLines = floor(self.customers.count / 3.0);
@@ -67,11 +72,17 @@
     // 重新筛选用户
 }
 - (void)customerDidPressFilterButton {
-    
+    [self.conditionsView showInWindow];
 }
 - (void)customerDidPressAddButton {
     DDEditCustomerController *addVC = [[DDEditCustomerController alloc] initWithCustomer:nil];
     [self presentViewController:addVC animated:YES completion:NULL];
+}
+
+#pragma mark - FilterCustomersConditionsViewDelegate
+
+- (void)conditionsViewDidSelectConditionsTypes:(NSArray *)types ratings:(NSArray *)ratings {
+    // 根据条件重新筛选
 }
 
 @end

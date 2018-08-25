@@ -9,6 +9,10 @@
 #import "AppDelegate.h"
 #import "IDConfig.h"
 #import "DDIntroViewController.h"
+#import "FirstViewController.h"
+#import "SecondViewController.h"
+#import "DDCustomersController.h"
+#import "DDMineViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +23,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    DDIntroViewController *ddIntro = [[DDIntroViewController alloc] initWithNibName:@"DDIntroViewController" bundle:nil];
+//    self.window.rootViewController = ddIntro;
+    
+    FirstViewController *first = [[FirstViewController alloc] init];
+    UINavigationController *navi1 = [[UINavigationController alloc] initWithRootViewController:first];
+    navi1.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"订单" image:[UIImage imageNamed:@""] tag:0];
+    
+    SecondViewController *secondVC = [[SecondViewController alloc] init];
+    UINavigationController *navi2 = [[UINavigationController alloc] initWithRootViewController:secondVC];
+    navi2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"档期" image:[UIImage imageNamed:@""] tag:1];
+    
+    DDCustomersController *customersVC = [[DDCustomersController alloc] init];
+    UINavigationController *navi3 = [[UINavigationController alloc] initWithRootViewController:customersVC];
+    navi3.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"客户" image:[UIImage imageNamed:@""] tag:2];
+    
+    DDMineViewController *mineVC = [[DDMineViewController alloc] init];
+    UINavigationController *navi4 = [[UINavigationController alloc] initWithRootViewController:mineVC];
+    navi4.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:[UIImage imageNamed:@""] tag:3];
+    
+    UITabBarController *tabVC = [[UITabBarController alloc] init];
+    tabVC.viewControllers = @[navi1, navi2, navi3, navi4];
+    
+    self.window.rootViewController = tabVC;
 
     return YES;
 }
